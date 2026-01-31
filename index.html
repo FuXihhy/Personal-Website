@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page | Gemini 3 Flash</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: #f4f7f6;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .status-badge {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="status-badge">Live Test</span>
+        <h1>Hello, World!</h1>
+        <p>This is a generated test file to verify your browser rendering and CSS styles. If you can see the blue header underline and the green badge, the CSS is working perfectly.</p>
+        
+        <div id="interactive">
+            <h3>Interactive Elements</h3>
+            <button onclick="showAlert()">Click Me</button>
+            <p id="timestamp"></p>
+        </div>
+    </div>
+
+    <script>
+        function showAlert() {
+            const now = new Date();
+            document.getElementById('timestamp').innerText = "Last clicked at: " + now.toLocaleTimeString();
+            alert("The script is running! Current year: " + now.getFullYear());
+        }
+    </script>
+</body>
+</html>
